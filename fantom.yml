@@ -11,10 +11,10 @@ services:
     volumes:
       - "fantom:/datadir"
     ports:
-    # P2P PORTS
-    #  - "18545:18545"
-    #  - "18546:18546"
-    # RPC PORTS
+#      API PORTS https://github.com/Fantom-foundation/go-opera/wiki/API
+#      - "18545:18545"
+#      - "18546:18546"
+#      RPC-PORT
       - "5050:5050"
       - "5050:5050/udp"
     restart: unless-stopped

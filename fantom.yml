@@ -10,7 +10,7 @@ services:
       - SNAPSHOT_URL=https://download.fantom.network/opera_28mar22.tgz
     volumes:
       - "fantom:/datadir"
-    ports:
+    expose:
 #      API PORTS https://github.com/Fantom-foundation/go-opera/wiki/API
 #      - "18545:18545"
 #      - "18546:18546"

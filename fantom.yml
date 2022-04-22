@@ -1,0 +1,23 @@
+version: "3.4"
+services:
+  fantom:
+    build:
+      args:
+        VERSION: release/1.1.0-rc.4
+      context: ./fantom
+      dockerfile: Dockerfile
+    environment:
+      - SNAPSHOT_URL=https://download.fantom.network/opera_28mar22.tgz
+    volumes:
+      - "fantom:/datadir"
+    ports:
+    # P2P PORTS
+    #  - "18545:18545"
+    #  - "18546:18546"
+    # RPC PORTS
+      - "5050:5050"
+      - "5050:5050/udp"
+    restart: unless-stopped
+
+volumes:
+  fantom:

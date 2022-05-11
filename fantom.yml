@@ -15,8 +15,8 @@ services:
 #      - "18545:18545"
 #      - "18546:18546"
 #      RPC-PORT
-      - "5050:5050"
-      - "5050:5050/udp"
+      - "5050"
+      - "5050"
     restart: unless-stopped
 
 volumes:

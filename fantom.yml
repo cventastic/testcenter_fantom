@@ -16,7 +16,6 @@ services:
 #      - "18546:18546"
 #      RPC-PORT
       - "5050"
-      - "5050"
     restart: unless-stopped
 
 volumes:
